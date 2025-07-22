@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowthPulse Marketing Digital</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1e1e1e;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            z-index: 1000;
+        }
+        
+        .logo {
+            height: 60px;
+            border-radius: 5px;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+        }
+        
+        main {
+            padding-top: 100px;
+            text-align: center;
+        }
+        
+        .typed-text {
+            font-size: 2.5rem;
+            margin-top: 30px;
+            font-weight: bold;
+            min-height: 60px;
+        }
+        
+        .services,
+        .creation-site,
+        .boost-reseau,
+        .temoignages,
+        .contact,
+        .infos-plus,
+        .why-us,
+        .methodologie {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 30px;
+            color: #00fff7;
+        }
+        
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background-color: #2a2a2a;
+            padding: 25px;
+            border-radius: 15px;
+            width: 280px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #ff4b2b;
+        }
+        
+        .special-card {
+            background: linear-gradient(145deg, #2e2e2e, #1a1a1a);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .special-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+        }
+        
+        .contact-info {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #292929;
+            border-radius: 20px;
+            max-width: 500px;
+            margin-inline: auto;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+        }
+        
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .faq h4 {
+            color: #00fff7;
+        }
+        
+        .faq p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            margin-top: 20px;
+            background: linear-gradient(90deg, #00fff7, #00c3ff);
+            padding: 15px 30px;
+            color: black;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(90deg, #00c3ff, #00fff7);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#top"><img src="https://cdn.discordapp.com/attachments/1396454527229755453/1397244416808456285/telechargement_2.png" alt="Logo" class="logo" /></a>
+        <div class="menu">
+            <a href="#creation-site">Création de site web</a>
+            <a href="#boost-reseau">Booster ses réseaux</a>
+            <a href="#infos-plus">+ d'infos</a>
+        </div>
+    </nav>
+
+    <main id="top">
+        <h1>Bienvenue chez AdamsB</h1>
+        <div class="typed-text" id="typed-text"></div>
+        <a href="#contact" class="cta-button">Contacte-moi dès maintenant</a>
+    </main>
+
+    <section class="services">
+        <h2>Nos services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Création de site web</h3>
+                <p>Des sites modernes, rapides, sécurisés et 100% adaptés mobile.</p>
+            </div>
+            <div class="card">
+                <h3>Stratégie Réseaux</h3>
+                <p>Instagram, TikTok, Facebook : on booste ta visibilité avec les bons formats et hashtags.</p>
+            </div>
+            <div class="card">
+                <h3>Graphisme personnalisé</h3>
+                <p>Des visuels sur mesure pour mettre en valeur ta marque ou ton activité.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="creation-site" id="creation-site">
+        <h2>Création de Site Web</h2>
+        <p>Nous créons des sites web qui inspirent confiance, séduisent et transforment tes visiteurs en clients. Design responsive, rédaction optimisée pour le SEO, sécurité renforcée, hébergement inclus.</p>
+        <div class="faq">
+            <h4>Pourquoi un site web est indispensable ?</h4>
+            <p>Ton site est ta carte de visite numérique. Il travaille pour toi 24h/24, même quand tu dors.</p>
+
+            <h4>Quel type de site proposez-vous ?</h4>
+            <p>Site vitrine, e-commerce, blog ou portfolio, 100% personnalisé selon ton secteur.</p>
+
+            <h4>Est-ce que je peux modifier mon site après ?</h4>
+            <p>Oui, tu recevras une vidéo ou formation express pour gérer ton site seul si tu veux.</p>
+
+            <h4>Combien ça coûte ?</h4>
+            <p>Des tarifs adaptés à ton budget. Paiement en plusieurs fois possible.</p>
+        </div>
+    </section>
+
+    <section class="boost-reseau" id="boost-reseau">
+        <h2>Booster ses Réseaux Sociaux</h2>
+        <p>On établit une stratégie sur mesure pour faire exploser ton nombre d’abonnés, créer une vraie communauté, et convertir ton audience en clients fidèles.</p>
+        <div class="faq">
+            <h4>Tu veux + d’abonnés locaux ?</h4>
+            <p>On cible les gens autour de toi avec une stratégie géolocalisée.</p>
+
+            <h4>Je n’ai pas le temps de publier...</h4>
+            <p>On crée et programme tes publications pour toi.</p>
+
+            <h4>Et si je suis débutant sur les réseaux ?</h4>
+            <p>On te guide étape par étape. Tu n’as rien à craindre.</p>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2>Pourquoi choisir GrowthPulse ?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>💡 Créativité</h3>
+                <p>Chaque projet est unique, et on te propose des idées originales qui marquent les esprits.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Réactivité</h3>
+                <p>Tu reçois ton projet rapidement. On répond à tes messages sous 24h.</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Résultats concrets</h3>
+                <p>Ton objectif devient le nôtre : plus de clients, plus de visibilité, plus d’impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="temoignages">
+        <h2>Ils nous ont fait confiance</h2>
+        <div class="cards">
+            <div class="card">
+                <p>"Grâce à Adam, j’ai maintenant un site pro et mes ventes ont explosé."</p>
+                <strong>- Yacine M.</strong>
+            </div>
+            <div class="card">
+                <p>"Mon compte TikTok est passé de 300 à 5000 abonnés en 3 semaines."</p>
+                <strong>- Lina R.</strong>
+            </div>
+            <div class="card">
+                <p>"Hyper sérieux, rapide et à l’écoute. Je recommande à 200%."</p>
+                <strong>- Leïla B.</strong>
+            </div>
+        </div>
+
+        <div class="contact-info" id="contact">
+            <h3>📞 Me contacter</h3>
+            <p>Email : growthpulsemarketingd@gmail.com</p>
+            <p>Instagram : @adam_sbh6</p>
+            <p>Réponse garantie sous 24h.</p>
+        </div>
+    </section>
+
+    <section class="infos-plus" id="infos-plus">
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis Adam Sbihi, j’ai 16 ans et je suis passionné par le digital. J’aide les commerçants, artisans, indépendants et petites entreprises à devenir visibles et professionnels sur internet, même sans budget énorme.</p>
+        <br>
+        <h2>💼 Services complémentaires</h2>
+        <div class="cards">
+            <div class="special-card">
+                <h3>Audit gratuit</h3>
+                <p>Analyse de ton site ou de tes réseaux avec conseils d’amélioration.</p>
+            </div>
+            <div class="special-card">
+                <h3>Visuels personnalisés</h3>
+                <p>Des visuels au format pro pour Instagram, TikTok, stories et publications.</p>
+            </div>
+            <div class="special-card">
+                <h3>Formation express</h3>
+                <p>Apprends à gérer seul tes réseaux ou ton site en quelques heures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="methodologie">
+        <h2>Notre méthode de travail</h2>
+        <div class="faq">
+            <h4>1. Échange gratuit</h4>
+            <p>On discute de ton besoin, gratuitement et sans engagement.</p>
+            <h4>2. Proposition sur-mesure</h4>
+            <p>Je t’envoie un plan simple, adapté à ton budget.</p>
+            <h4>3. Réalisation rapide</h4>
+            <p>En quelques jours seulement, ton site ou ta stratégie est prête.</p>
+            <h4>4. Suivi et accompagnement</h4>
+            <p>Je reste dispo même après livraison. Tu n’es jamais seul.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 - Site conçu par Adam Sbihi | Marketing Digital GrowthPulse
+    </footer>
+
+    <script>
+        const typedText = document.getElementById("typed-text");
+        const fullText = "Booster votre présence digitale avec GrowthPulse.";
+        let i = 0;
+
+        function typeText() {
+            if (i < fullText.length) {
+                typedText.textContent += fullText.charAt(i);
+                i++;
+                setTimeout(typeText, 80);
+            } else {
+                typedText.style.borderRight = "none";
+            }
+        }
+
+        typedText.style.borderRight = "2px solid white";
+        typeText();
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Création de Sites Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            animation: fadeIn 1.2s ease-in;
+            line-height: 1.6;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #1f1f1f;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+        }
+        
+        .logo {
+            height: 60px;
+            border-radius: 8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #ff4b2b;
+            text-align: center;
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        h2 {
+            color: #ff416c;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff4b2b;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+        }
+        
+        .steps {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+        }
+        
+        .step h3 {
+            margin-bottom: 8px;
+            color: #ff637b;
+        }
+        /* FAQ styling */
+        
+        .faq {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            cursor: pointer;
+            color: #ff637b;
+        }
+        
+        .faq-answer {
+            margin-top: 5px;
+            display: none;
+            font-weight: 400;
+            color: #ddd;
+        }
+        /* Animation fade in on scroll */
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation-fill-mode: forwards;
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img src="https://cdn.discordapp.com/attachments/1396454527229755453/1397244416808456285/telechargement_2.png?ex=688104c4&is=687fb344&hm=533f67f39398e8096efa9eda558d4c553d5cfa55d3dcc43e7060581b042c156e&" alt="Logo" class="logo" />
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="boost-reseau.html">Booster Réseaux</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="fade-in" style="animation-delay: 0.2s;">Création de Sites Web</h1>
+
+        <section class="fade-in" style="animation-delay: 0.4s;">
+            <h2>Pourquoi un site web est indispensable aujourd’hui ?</h2>
+            <p>
+                Un site web professionnel est la vitrine numérique de votre entreprise. Il permet de présenter vos services, gagner en crédibilité et toucher un large public local ou national. Sans site, vous perdez une part importante de clients qui cherchent sur Internet
+                avant de choisir.
+            </p>
+        </section>
+
+        <section class="fade-in" style="animation-delay: 0.6s;">
+            <h2>Nos avantages</h2>
+            <ul>
+                <li>Design moderne, responsive et optimisé pour tous les appareils (mobile, tablette, PC)</li>
+                <li>Site rapide, sécurisé et compatible SEO pour bien ranker sur Google</li>
+                <li>Gestion facile et évolutive : ajout de pages, blog, boutique en ligne</li>
+                <li>Support et conseils personnalisés pour vous aider à maîtriser votre site</li>
+            </ul>
+        </section>
+
+        <section class="steps fade-in" style="animation-delay: 0.8s;">
+            <h2>Notre processus en 4 étapes</h2>
+
+            <div class="step">
+                <h3>1. Analyse & conseils personnalisés</h3>
+                <p>Nous étudions votre activité, vos objectifs et vos concurrents pour définir un cahier des charges précis.</p>
+            </div>
+
+            <div class="step">
+                <h3>2. Maquette & design</h3>
+                <p>Nous réalisons des prototypes visuels pour valider le look et l’ergonomie de votre futur site.</p>
+            </div>
+
+            <div class="step">
+                <h3>3. Développement & intégration</h3>
+                <p>Nous créons un site performant avec les meilleures technologies, optimisé SEO et responsive.</p>
+            </div>
+
+            <div class="step">
+                <h3>4. Mise en ligne & suivi</h3>
+                <p>Nous vous accompagnons dans la mise en ligne et restons disponibles pour la maintenance et l’évolution.</p>
+            </div>
+        </section>
+
+        <section class="fade-in" style="animation-delay: 1s;">
+            <h2>Conseils pour maximiser votre présence en ligne</h2>
+            <p>Un bon site ne suffit pas, il faut aussi :</p>
+            <ul>
+                <li>Publier régulièrement du contenu intéressant</li>
+                <li>Utiliser les réseaux sociaux pour diriger du trafic vers votre site</li>
+                <li>Optimiser votre référencement naturel avec des mots-clés adaptés</li>
+                <li>Recueillir les avis clients pour rassurer vos visiteurs</li>
+            </ul>
+        </section>
+
+        <section class="faq fade-in" style="animation-delay: 1.2s;">
+            <h2>FAQ - Questions fréquentes</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Combien de temps pour créer un site ?</div>
+                <div class="faq-answer">En général entre 3 et 6 semaines selon la complexité et vos retours.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je modifier mon site moi-même ?</div>
+                <div class="faq-answer">Oui, nous fournissons un CMS simple ou un accès facile pour faire vos modifications.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Proposez-vous une maintenance ?</div>
+                <div class="faq-answer">Oui, nous offrons un suivi régulier et des mises à jour de sécurité.</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // FAQ toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
